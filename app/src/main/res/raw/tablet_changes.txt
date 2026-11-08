@@ -1,0 +1,40 @@
+Solitaire - Big Card Solitaire tablet edition (September 2026)
+Based on SolitaireCG 4.1 by Curtis Gedak and the original Solitaire by Ken Magic.
+Original source snapshot: ca8c94deb7dcdcf503e2001928c30c8812cbd6dc.
+Copyright holders and Apache License 2.0 terms remain in the source and COPYING.
+
+This edition adds a visible New Game / Undo / Hint / Exit bar, landscape and fixed
+application display scaling, draw-three Klondike defaults, backup/transfer
+exclusions, and a single UI-thread refresh loop. It omits the original splash
+and menu entry points. Card movement and the Klondike rules implementation
+are retained. UPSTREAM_README.txt and COPYING contain the original project notices.
+
+The table and controls share a green background. Immersive full-screen mode
+hides Android's status/navigation bars on launch and return.
+An edge swipe can reveal the system bars temporarily; Exit remains visible.
+
+Traditional card artwork is retained, including illustrated face cards.
+
+Traditional landscape corner ranks remain at 1.6 times their original size.
+Corner suit symbols use 45 x 45 pixel boxes. Interior A-9 symbols use 60 x 60
+for clubs/spades, 54 x 54 for hearts, and 66 x 66 for diamonds. The 10 uses
+57 x 54 clubs, 54 x 54 spades, 49 x 49 hearts, and 68 x 59 diamonds. The 9 of diamonds
+has extra outer-row spacing. Suits beside face pictures remain 40 x 40,
+except diamonds at 50 x 44. Face pictures and corner/rank sizes remain.
+
+The original red card backs and traditional faces are kept.
+Cards move by tapping or by dragging, with a
+5 dp amber-gold selection outline and dark-green hidden tableau stacks matching
+empty foundation spaces. Board top padding is 30 pixels; the row gap is 40 pixels.
+
+The deck shuffle uses Fisher-Yates with
+SecureRandom. Saves use atomic replacement and retain the last completed save
+on reopen/interrupted writes. New Game checkpoints a new deal, winning retires
+the old save, and a failed Exit save leaves the app open to retry. The existing
+save format and Undo remain compatible.
+
+Hint cycles through legal source/destination pairs using cyan outlines, without
+moving cards or ranking strategy. A read-only draw-three stock-cycle scan guides
+drawing and reports No moves available, with Undo/New Game guidance, when no
+legal card move exists now or through drawing/recycling. The same nonmodal
+feedback appears automatically after stock actions. Hint state is not saved.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="table_green">#008000</color>
+    <string name="dad_app_name">Solitaire</string>
+    <string name="dad_new_game">New Game</string>
+    <string name="dad_undo">Undo</string>
+    <string name="dad_hint">Hint</string>
+    <string name="dad_hint_move">Move the outlined cards\nto the outlined space.</string>
+    <string name="dad_hint_stock">Tap the draw pile.</string>
+    <string name="dad_no_moves">No moves available\nTry Undo or New Game.</string>
+    <string name="dad_exit">Exit</string>
+    <style name="GameButton" parent="android:style/Widget.Material.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:background">@drawable/game_button_background</item>
+        <item name="android:backgroundTint">#245D3B</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <string name="dad_save_failed">Could not save your game. Please try Exit again.</string>
+</resources>

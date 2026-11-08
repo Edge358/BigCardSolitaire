@@ -1,0 +1,32 @@
+# Store detected text in Git with LF; use CRLF in this Windows workspace.
+* text=auto eol=crlf
+
+# Shell entry points and CI definitions require LF.
+*.sh text eol=lf
+*.bash text eol=lf
+gradlew text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.github/** text eol=lf
+
+# Binary assets must never receive line-ending conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.apk binary
+*.aab binary
+*.zip binary
+*.7z binary
+*.bin binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.mp4 binary
