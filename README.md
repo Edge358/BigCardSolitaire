@@ -4,6 +4,8 @@ Klondike solitaire for Android tablets, built to be easy to see and easy to play
 
 Everything happens on the tablet: no account, no internet connection, no ads, no tracking. The app does not even ask for network access.
 
+I put this version together for my father: big cards, simple controls and no complicated menus. I wanted something he could enjoy on his Android tablet, entirely offline, with no ads or tracking.
+
 [**How to play**](docs/HOW_TO_PLAY.md) covers the rules, tap and drag controls, hints and touch shortcuts.
 
 ![A game in progress on an Android tablet](docs/images/tablet-midgame.png)
