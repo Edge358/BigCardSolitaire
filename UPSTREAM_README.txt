@@ -1,3 +1,8 @@
+HISTORICAL UPSTREAM DOCUMENT
+Preserved for SolitaireCG attribution and release history. Its menus,
+game variants and options are not instructions for Big Card Solitaire.
+Use docs/HOW_TO_PLAY.md for this tablet edition.
+
 Updated README by Curtis Gedak
 ==============================
 

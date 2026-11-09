@@ -4,7 +4,9 @@ Klondike solitaire for Android tablets, built to be easy to see and easy to play
 
 Everything happens on the tablet: no account, no internet connection, no ads, no tracking. The app does not even ask for network access.
 
-![A game in progress, with Hint showing a move](docs/images/tablet-hint.png)
+[**How to play**](docs/HOW_TO_PLAY.md) covers the rules, tap and drag controls, hints and touch shortcuts.
+
+![A game in progress on an Android tablet](docs/images/tablet-midgame.png)
 
 ## Download
 
@@ -18,6 +20,10 @@ The ready-to-install app is on the [Releases page](https://github.com/Edge358/Bi
 - New Game, Undo, Hint and Exit sit in a full-size bar along the bottom.
 - Hint outlines a card and the place it can go, in cyan. Press again to see the next possible move. When no move is left, it says so and suggests Undo or New Game.
 - Your game is saved when you leave and picks up where you were when you come back.
+
+## How to play
+
+The [illustrated player guide](docs/HOW_TO_PLAY.md) explains the rules, moving whole runs, crowded stacks, fling-to-foundation, drawing and recycling, Hint, Undo and saving. It describes this tablet edition; the preserved upstream README is historical background.
 
 ## Build it yourself
 
